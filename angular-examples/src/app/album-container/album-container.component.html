@@ -1,3 +1,6 @@
 <div>
-    <app-album [album]="album"></app-album>
+    <app-album
+        *ngFor="let album of albumList"
+        [album]="album">
+    </app-album>
 </div>
