@@ -10,7 +10,7 @@ export class AlbumContainerComponent {
   albumList: Album[] = [
   {
     id: 1,
-    title: 'No Sleep \'Til New Providence',
+    title: 'No Sleep \'Til New Nassau',
     artist: 'Ghost Pirate',
     cover: '../../assets/ghost-pirate-thumb.png',
     releaseDate: 'Jan 1, 2006',
@@ -24,8 +24,15 @@ export class AlbumContainerComponent {
   },
   {
     id: 1,
-    title: 'New Day(Yesterday)',
+    title: 'day = new Day(Yesterday)',
     artist: 'Jethro Null',
+    cover: '../../assets/flute-thumb.jpeg',
+    releaseDate: 'Jan 1, 2006',
+  },
+  {
+    id: 1,
+    title: 'I Wanna Be Your Bogg',
+    artist: 'Pete Bogg',
     cover: '../../assets/flute-thumb.jpeg',
     releaseDate: 'Jan 1, 2006',
   },
