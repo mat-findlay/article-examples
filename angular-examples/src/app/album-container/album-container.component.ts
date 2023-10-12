@@ -10,7 +10,7 @@ export class AlbumContainerComponent {
   albumList: Album[] = [
   {
     id: 1,
-    title: 'No Sleep \'Til New Nassau',
+    title: 'No Sleep \'Til Nassau',
     artist: 'Ghost Pirate',
     cover: '../../assets/ghost-pirate-thumb.png',
     releaseDate: 'Jan 1, 2006',
