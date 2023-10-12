@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { AlbumsService } from '../albums.service';
 import { Album } from '../album/album.types';
 
 @Component({
@@ -7,34 +8,10 @@ import { Album } from '../album/album.types';
   styleUrls: ['./album-container.component.css']
 })
 export class AlbumContainerComponent {
-  albumList: Album[] = [
-  {
-    id: 1,
-    title: 'No Sleep \'Til New Nassau',
-    artist: 'Ghost Pirate',
-    cover: '../../assets/ghost-pirate-thumb.png',
-    releaseDate: 'Jan 1, 2006',
-  },
-  {
-    id: 2,
-    title: 'Nifty As I Want To Be',
-    artist: 'Nifty Cal',
-    cover: '../../assets/mic-thumb.png',
-    releaseDate: 'Jan 1, 2006',
-  },
-  {
-    id: 1,
-    title: 'day = new Day(Yesterday)',
-    artist: 'Jethro Null',
-    cover: '../../assets/flute-thumb.jpeg',
-    releaseDate: 'Jan 1, 2006',
-  },
-  {
-    id: 1,
-    title: 'I Wanna Be Your Bogg',
-    artist: 'Pete Bogg',
-    cover: '../../assets/flute-thumb.jpeg',
-    releaseDate: 'Jan 1, 2006',
-  },
-]
+  albumList: Album[] = [];
+  albumsService: AlbumsService = inject(AlbumsService);
+
+  constructor() {
+    this.albumList = this.albumsService.getAllAlbums();
+  }
 }
