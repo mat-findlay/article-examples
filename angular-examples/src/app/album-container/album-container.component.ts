@@ -21,21 +21,28 @@ export class AlbumContainerComponent {
       title: 'Nifty As I Want To Be',
       artist: 'Nifty Cal',
       cover: '../../assets/mic-thumb.png',
-      releaseDate: 'Jan 1, 2006',
+      releaseDate: 'Jan 1, 2018',
     },
     {
       id: 1,
       title: 'day = new Day(Yesterday)',
       artist: 'Jethro Null',
       cover: '../../assets/flute-thumb.jpeg',
-      releaseDate: 'Jan 1, 2006',
+      releaseDate: 'Jan 1, 2020',
     },
     {
       id: 1,
       title: 'I Wanna Be Your Bogg',
       artist: 'Pete Bogg',
       cover: '../../assets/flute-thumb.jpeg',
-      releaseDate: 'Jan 1, 2006',
+      releaseDate: 'Jan 1, 2020',
+    },
+    {
+      id: 1,
+      title: 'Feeling A Bit Swamped',
+      artist: 'Pete Bogg',
+      cover: '../../assets/flute-thumb.jpeg',
+      releaseDate: 'Jan 1, 2022',
     },
   ];
 
@@ -53,5 +60,10 @@ export class AlbumContainerComponent {
         album?.title.toLowerCase().includes(text.toLowerCase()) || 
         album?.artist.toLowerCase().includes(text.toLowerCase())
     );
+  }
+
+  clearFilter(filterInput: HTMLInputElement) {
+    filterInput.value = '';
+    this.filteredAlbumList = this.albumList;
   }
 }

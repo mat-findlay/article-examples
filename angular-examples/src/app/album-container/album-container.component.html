@@ -3,6 +3,7 @@
     <form>
         <input #filter type="text" placeholder="Filter by artist/title">
         <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
+        <button class="clear-filter" type="button" (click)="clearFilter(filter)" [hidden]="filter.value === ''">Clear</button>
     </form>
 </section>
 
