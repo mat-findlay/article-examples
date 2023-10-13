@@ -1,0 +1,12 @@
+.search {
+    padding: 20px 0;
+}
+
+.search input {
+    width: 25%;
+    margin-right: 10px;
+}
+
+.search button {
+    margin-right: 10px;
+}

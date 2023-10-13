@@ -34,14 +34,14 @@ export class AlbumContainerComponent {
       id: 4,
       title: 'I Wanna Be Your Bogg',
       artist: 'Pete Bogg',
-      cover: '../../assets/flute-thumb.jpeg',
+      cover: '../../assets/bog-thumb.png',
       releaseDate: 'Jan 1, 2020',
     },
     {
       id: 5,
       title: 'Swamped',
       artist: 'Pete Bogg',
-      cover: '../../assets/flute-thumb.jpeg',
+      cover: '../../assets/bog-thumb.png',
       releaseDate: 'Jan 1, 2022',
     },
   ];
@@ -60,6 +60,8 @@ export class AlbumContainerComponent {
         album?.title.toLowerCase().includes(text.toLowerCase()) || 
         album?.artist.toLowerCase().includes(text.toLowerCase())
     );
+
+    return false;
   }
 
   clearFilter(filterInput: HTMLInputElement) {
