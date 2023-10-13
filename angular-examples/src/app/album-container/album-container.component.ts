@@ -39,7 +39,7 @@ export class AlbumContainerComponent {
     },
     {
       id: 1,
-      title: 'Feeling A Bit Swamped',
+      title: 'Swamped',
       artist: 'Pete Bogg',
       cover: '../../assets/flute-thumb.jpeg',
       releaseDate: 'Jan 1, 2022',
