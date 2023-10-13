@@ -1,6 +1,14 @@
-<div>
+
+<section>
+    <form>
+        <input #filter type="text" placeholder="Filter by artist/title">
+        <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
+    </form>
+</section>
+
+<section>
     <app-album
-        *ngFor="let album of albumList"
+        *ngFor="let album of filteredAlbumList"
             [album]="album">
     </app-album>
-</div>
+</section>
